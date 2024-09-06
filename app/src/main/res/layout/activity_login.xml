@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/login"/>
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            app:layout_constraintTop_toBottomOf="@id/iv_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        
+        
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            android:hint="Name"
+            android:backgroundTint="@color/lightorange"
+            app:layout_constraintTop_toBottomOf="@id/tv_log"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            android:hint="@string/password"
+            android:backgroundTint="@color/lightorange"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_name"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            android:text="@string/login"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_password"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
