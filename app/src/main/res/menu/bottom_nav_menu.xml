@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/browse" android:title="@string/browse" android:icon="@drawable/loupe"></item>
-    <item android:id="@+id/cart" android:title="@string/myCart" android:icon="@drawable/shopping_cart"></item>
-    <item android:id="@+id/meal_plans" android:title="@string/meal_plans" android:icon="@drawable/schedule"></item>
+    <item android:id="@id/browseFragment" android:title="@string/browse" android:icon="@drawable/loupe"></item>
+    <item android:id="@+id/mycartFragment" android:title="@string/myCart" android:icon="@drawable/shopping_cart"></item>
+    <item android:id="@+id/mealplanFragment" android:title="@string/meal_plans" android:icon="@drawable/schedule"></item>
 </menu>

@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+<variable
+    name="meal"
+    type="com.example.assigment_navigation.Meal" />
     </data>
 
 
@@ -22,21 +24,22 @@
         android:padding="8dp">
 
         <ImageView
+            android:id="@+id/item_meal_iv"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/pizza"
+            android:layout_height="350dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/pizza" />
+             />
 
 
         <TextView
+            android:id="@+id/item_meal_tv"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/pizza"
             android:textAppearance="?attr/textAppearanceHeadline1"
             android:gravity="center"
-            android:textSize="20dp"
-
+            android:text="@{meal.title}"
+            android:textSize="24sp"
+            android:textColor="@color/black"
             />
     </LinearLayout>
 
